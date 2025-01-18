@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Crood.css">
+    <title>Crood App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-center">
+            <h1 class="title"><strong>CRUD Application</strong></h1>
+        </div>
+        <div class="main"></div>
+       <form id="Produk-Form" class="Form" autocomplete="off">
+    <div class="isi-form">
+        <label for="Kode Produk">Kode Produk</label>
+        <input class="atur-form" id="Kode-Produk" type="text" readonly value="AH-001">
+    </div>
+    <div class="isi-form">
+        <label for="Nama-Produk">Nama Produk</label>
+        <input class="atur-form" id="Nama-Produk" type="text" placeholder="Masukan Nama Produk">
+    </div>
+    <div class="isi-form">
+        <label for="Harga-Produk">Harga</label>
+        <input class="atur-form" id="Harga-Produk" type="number" placeholder="Harga">
+    </div>
+    <div class="isi-form">
+        <label for="Kategori">Kategori</label>
+        <select name="Kategori" id="Kategori">
+            <option value="Minuman">Minuman</option>
+            <option value="Makanan">Makanan</option>
+        </select>
+    </div>
+    <div class="isi-form">
+        <label for="Jumlah-Produk">Jumlah</label>
+        <input class="atur-form" id="Jumlah-Produk" type="number" placeholder="Jumlah">
+        <label for="Satuan-Produk">Jenis Satuan</label>
+        <select name="Satuan" id="Satuan-Produk">
+            <option value="gelas">Gelas</option>
+            <option value="botol">Botol</option>
+        </select>
+    </div>
+    <div class="isi-form">
+        <label for="Url-Produk">URL Produk</label>
+        <input class="atur-form" id="Url-Produk" type="text" placeholder="URL Gambar">
+    </div>
+    <div class="isi-form">
+        <label for="Stok-Produk">Stok Produk</label>
+        <input class="atur-form" id="Stok-Produk" type="number" placeholder="Stok">
+    </div>
+    <button type="submit" onclick="simpanProduk()">Submit</button>
+</form>
+
+        <table id="Table-Produk">
+            <thead class="Table-Head">
+                <tr>
+                    <th>Kode Produk</th>
+                    <th>Nama </th>
+                    <th>Harga</th>
+                    <th>Kategori</th>
+                    <th>Jumlah</th>
+                    <th>URL</th>
+                    <th>Stok</th>
+                </tr>
+            </thead>
+            <tbody class="Table-Body">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<script src="Crood.js"></script>
+    
+</body>
+</html>
